@@ -1,5 +1,10 @@
 set number
+set cursorline
 set mouse=a
+set title
+set cscoperelative
+"Increase the undo limit
+set history=1000
 set tags=./tags,./TAGS,tags;~,TAGS;~
 set cscopetag
 set csto=0
@@ -28,7 +33,7 @@ let Tlist_Exit_OnlyWindow=1
 set ut=100
 
 "NerdTree shortcut mapping
-nmap <F9> :NERDTreeToggle<CR><CR>
+nmap <F9> :NERDTreeFind<CR><CR>
 let NERDTreeWinPos=1
 
 "SrcExpl settings
